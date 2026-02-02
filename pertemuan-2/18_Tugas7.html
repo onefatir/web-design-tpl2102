@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background: url('background.png') no-repeat center center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        #navbar { 
+            color: gray;       
+            display: flex;
+            width: 100%;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            box-sizing: border-box;
+            padding-right: 64px;
+            padding-left: 64px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            margin: 0;
+        }
+
+        #gallery, #gallery > main {
+            padding-left: 64px;
+            padding-right: 64px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        #gallery > main {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #images {
+            padding: 0;
+            display: flex;
+            column-gap: 2rem;
+            list-style: none;
+        }
+
+        #images > li > img {
+            border-radius: 12px;
+            border-width: 6px;
+            border-color: white;
+            border-style: solid;    
+        }
+
+        .nav-btn > a {
+            border: none;
+            background-color: transparent;
+            text-decoration: none   ;
+            font-size: large;
+            color: gray;       
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .nav-btn:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <h2>Website</h2>
+        
+        <ul class="nav-links">
+            <li class="nav-btn">
+                <a href="19_Home.html">Home</a>
+            </li>
+            <li class="nav-btn">
+                <a>Profile</a>
+            </li>
+            <li class="nav-btn">
+                <a>Gallery</a>
+            </li>
+            <li class="nav-btn">
+                <a>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="gallery">
+        <main>
+            <br>
+            <font size="+3">
+                <h1>Gallery</h1>
+            </font>
+            <hr>
+
+            <!-- Images -->
+            <marquee behavior="alternate" scrolldelay="10" scrollamount="25" direction="left">
+                <ul id="images">
+                    <li>
+                        <img src="kazuha.jpg" width="250px" height="250px">
+                    </li>
+                    <li>
+                        <img src="columbina.jpg" width="250px" height="250px">
+                    </li>
+                    <li>
+                        <img src="tako-icon.png" width="250px" height="250px">
+                    </li>
+                </ul>
+            </marquee>
+
+            <br>
+            
+            <hr>
+
+            <footer>
+                <p style="text-align: center;">Copyright &copy; 2026</p>
+            </footer>
+
+            <br>
+        </main>
+    </section>
+</body>
+</html>

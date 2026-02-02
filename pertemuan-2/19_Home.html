@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning - Home</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        #navbar { 
+            color: gray;       
+            display: flex;
+            width: 100%;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            box-sizing: border-box;
+            padding-right: 64px;
+            padding-left: 64px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            margin: 0;
+        }
+
+        .nav-btn > button {
+            border: none;
+            background-color: transparent;
+            font-size: large;
+            color: gray;       
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .nav-btn:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        #main-content {
+            padding: 64px;
+            color: white;
+        }
+
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 32px;
+            margin-bottom: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .content-section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+        }
+
+        .example-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 16px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 24px;
+            margin-top: 48px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <h2>Website</h2>
+        
+        <ul class="nav-links">
+            <li class="nav-btn">
+                <button>Home</button>
+            </li>
+            <li class="nav-btn">
+                <button>Profile</button>
+            </li>
+            <li class="nav-btn">
+                <button>Gallery</button>
+            </li>
+            <li class="nav-btn">
+                <button>Contact</button>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <!-- Heading Section -->
+        <div class="content-section">
+            <h2>1. Heading - Judul dan Subjudul</h2>
+            <div class="example-box">
+                <h1 align="center">Praktikum Perancangan Web</h1>
+                <h2 align="left">Praktikum Perancangan Web</h2>
+                <h3 align="right">Praktikum Perancangan Web</h3>
+                <h4>Praktikum Perancangan Web</h4>
+                <h5>Praktikum Perancangan Web</h5>
+                <h6>Praktikum Perancangan Web</h6>
+            </div>
+        </div>
+
+        <!-- Paragraf Section -->
+        <div class="content-section">
+            <h2>2. Paragraf - Blok Teks</h2>
+            <div class="example-box">
+                <h3>Paragraf Normal:</h3>
+                <p>
+                    Ut pariatur excepteur aliqua pariatur veniam consectetur. Ad cupidatat sint incididunt laboris non.
+                    Et ea ex consequat consequat sit amet aliquip amet ut quis quis.
+                    Ex in sunt sunt consequat Lorem exercitation.
+                    Do Lorem est qui. Ad commodo pariatur laborum adipisicing irure consequat commodo est. Nostrud laborum aute aute ullamco consectetur duis esse non velit. Ipsum ea labore culpa.
+                </p>
+                
+                <h3>Paragraf dengan Justify:</h3>
+                <p align="justify">
+                    Ut pariatur excepteur aliqua pariatur veniam consectetur. Ad cupidatat sint incididunt laboris non.
+                    Et ea ex consequat consequat sit amet aliquip amet ut quis quis.
+                    Ex in sunt sunt consequat Lorem exercitation.
+                    Do Lorem est qui. Ad commodo pariatur laborum adipisicing irure consequat commodo est. Nostrud laborum aute aute ullamco consectetur duis esse non velit. Ipsum ea labore culpa.
+                </p>
+            </div>
+        </div>
+
+        <!-- Format Teks Section -->
+        <div class="content-section">
+            <h2>3. Format Teks - Styling Text</h2>
+            <div class="example-box">
+                <b>Teks ini ditebalkan</b><br>
+                <small>Teks ini diperkecil</small><br>
+                <i>Teks ini dimiringkan</i><br>
+                <big>Teks ini besar</big><br>
+                <u>Teks ini tercetak bergaris bawah</u><br>
+                <strong>Teks ini strong</strong><br>
+                <strike>Teks ini dicoret</strike><br>
+                Contoh Subscript: H<sub>2</sub>O<br>
+                Contoh Superscript: X<sup>2</sup> + Y<sup>2</sup> = 0<br>
+                <font size="6" color="red">Kita sedang belajar HTML</font>
+            </div>
+        </div>
+
+        <!-- Line Break Section -->
+        <div class="content-section">
+            <h2>4. Line Break - Memotong Baris</h2>
+            <div class="example-box">
+                Memotong <br> baris <br> dalam suatu <br>
+                paragraf <br> menggunakan tag br.
+            </div>
+        </div>
+
+        <!-- Horizontal Rule Section -->
+        <div class="content-section">
+            <h2>5. Horizontal Rule - Garis Pemisah</h2>
+            <div class="example-box">
+                Tag hr digunakan untuk mendefinisikan garis <hr>
+                garis dengan lebar 90% <hr width="90%">
+                garis dengan lebar 90 pixel <hr width="90px">
+                garis dengan lebar 50% dan rata kiri <hr width="50%" align="left">
+                garis dengan lebar 50% dengan posisi garis di tengah
+                <hr width="50%" align="center" size="10">
+                garis dengan lebar 50% dengan posisi
+                di tengah dan warna garis orange
+                <hr width="50%" align="center" size="10" color="orange">
+                <hr width="1%" align="center" size="600" color="orange">
+            </div>
+        </div>
+
+        <!-- Karakter Khusus Section -->
+        <div class="content-section">
+            <h2>6. Karakter Khusus - Special Characters</h2>
+            <div class="example-box">
+                <strong>Tanda Kutip:</strong> &quot; <br>
+                <strong>Ampersand:</strong> &amp; <br>
+                <strong>Kurang dari:</strong> &lt; <br>
+                <strong>Lebih dari:</strong> &gt; <br>
+                <strong>Copyright:</strong> &copy; <br>
+                <strong>Registered:</strong> &reg; <br>
+                <strong>Plus/Minus:</strong> &plusmn; <br>
+                <strong>AE Ligature (kapital):</strong> &AElig; <br>
+                <strong>ae ligature (kecil):</strong> &aelig; <br>
+                <strong>E acute (kapital):</strong> &Eacute; <br>
+                <strong>e acute (kecil):</strong> &eacute; <br>
+            </div>
+        </div>
+
+        <!-- Marquee Section -->
+        <div class="content-section">
+            <h2>7. Marquee - Teks Bergerak</h2>
+            <div class="example-box">
+                <h3>Marquee Default:</h3>
+                <marquee>Manajemen Informatika IPB</marquee>
+                
+                <h3>Marquee dengan Atribut:</h3>
+                <marquee behavior="alternate" scrolldelay="100" scrollamount="10" direction="left">
+                    <font color="#006600" size="6">Program Diploma IPB</font>
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Quotation Section -->
+        <div class="content-section">
+            <h2>8. Quotation - Kutipan</h2>
+            <div class="example-box">
+                <h3>Blockquote:</h3>
+                <blockquote>
+                    Ini adalah contoh blockquote. Blockquote digunakan untuk menampilkan kutipan panjang yang dipisahkan dari teks utama dengan indentasi.
+                </blockquote>
+                
+                <h3>Q (Quote Inline):</h3>
+                <p>Seperti yang dikatakan oleh Albert Einstein: <q>Imagination is more important than knowledge.</q></p>
+            </div>
+        </div>
+
+        <!-- Pre Section -->
+        <div class="content-section">
+            <h2>9. Pre - Preformatted Text</h2>
+            <div class="example-box">
+                <pre>
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks
+                </pre>
+            </div>
+        </div>
+
+        <!-- Format Huruf Section -->
+        <div class="content-section">
+            <h2>10. Format Huruf - Font Formatting</h2>
+            <div class="example-box">
+                <font face="Arial" size="3" color="blue">Teks dengan font Arial, ukuran 3, warna biru</font><br>
+                <font face="Courier New" size="4" color="green">Teks dengan font Courier New, ukuran 4, warna hijau</font><br>
+                <font face="Times New Roman" size="5" color="red">Teks dengan font Times New Roman, ukuran 5, warna merah</font><br>
+                <font face="Verdana" size="6" color="purple">Teks dengan font Verdana, ukuran 6, warna ungu</font>
+            </div>
+        </div>
+
+        <!-- Arah Teks Section -->
+        <div class="content-section">
+            <h2>11. Arah Teks - Text Direction</h2>
+            <div class="example-box">
+                <p align="left"><b>Align Left:</b> Teks ini rata kiri</p>
+                <p align="center"><b>Align Center:</b> Teks ini rata tengah</p>
+                <p align="right"><b>Align Right:</b> Teks ini rata kanan</p>
+                <p align="justify"><b>Align Justify:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <!-- Teks Sisip dan Hapus Section -->
+        <div class="content-section">
+            <h2>12. Teks Sisip dan Hapus - Insert & Delete</h2>
+            <div class="example-box">
+                <p>Harga lama: <del>Rp 100.000</del></p>
+                <p>Harga baru: <ins>Rp 75.000</ins></p>
+                <p>Perubahan: Saya suka <del>kopi</del> <ins>teh</ins></p>
+            </div>
+        </div>
+
+        <!-- Alamat Section -->
+        <div class="content-section">
+            <h2>13. Alamat - Address Tag</h2>
+            <div class="example-box">
+                <address>
+                    Ditulis oleh: <b>John Doe</b><br>
+                    Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a><br>
+                    Alamat: Jl. Raya No. 123<br>
+                    Jakarta, Indonesia 12345<br>
+                    Telp: +62 21 1234567
+                </address>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2026 - HTML Learning Platform</p>
+            <p>Kumpulan Materi HTML Dasar dari Pertemuan 1</p>
+        </footer>
+    </section>
+</body>
+</html>
