@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+    <style type="text/css">
+        body {
+            background-color: #A6C079;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        #main {
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid #A6C079;
+            padding: 1px;
+            height: 100%;
+        }
+
+        #header {
+            padding: 1px;
+            margin: 1px;
+            border: 6px solid white;
+            border-radius: 12px;
+            text-align: center;
+            height: 250px;
+            background: url('Header-2.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        #navbar {
+            background-color: #85A156;
+            height: 50px;
+            border: 6px solid white;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: large;
+            font-weight: 500;
+            column-gap: 48px;
+        }
+
+        #menu-kiri {
+            width: 64%;
+            float: left;
+            background-color: #E3E5DA;
+            padding-right: 48px;
+            padding-left: 48px;
+        }
+
+        #menu-kiri p {
+            color: purple;
+        }
+
+        #menu-kanan {
+            background-color: #E3E5DA;
+            width: 30%;
+            float: right;
+            padding-left: 24px;
+        }
+
+        #menu-kanan h2 {
+            text-align: center;
+            color: #A6C079;
+        }
+
+        #menu-kanan p {
+            color: purple;
+        }
+
+        .bersih {
+            float: none;
+            clear: both;
+        }
+
+        #footer {
+            padding: 1px;
+            margin: 1px;
+            border: 1px solid orange;
+            text-align: center;
+            background-color: #ffc58a;
+            color: white;
+        }
+
+        .vl {
+            border-left: 4px solid white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #section-main {
+            border: 6px solid white;
+            border-top-width: 0px;
+            border-radius: 12px;
+            background-color: #E3E5DA;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+        </div>
+
+        <div class="bersih"></div>
+
+        <div id="navbar">
+            <div><a>Beranda</a></div>
+            <div><a>Profil</a></div>
+            <div><a>Akademik</a></div>
+            <div><a>Galeri</a></div>
+            <div><a>Hubungi Kami</a></div>
+        </div>
+
+        <section id="section-main">
+            <div id="menu-kiri">
+                <h2>Profil</h2>
+                <p>Evergreen Hotel & Cottage terletak di alam perbukitan yang sejuk alami serta diiringi gemercik air sungai Ciliwung dan Cisampai yang mengalir dengan panorama alam yang indah.</p>
+                <p>Evergreen Hotel & Cottage terletak di alam perbukitan yang sejuk alami serta diiringi gemercik air sungai Ciliwung dan Cisampai yang mengalir dengan panorama alam yang indah.</p>
+            </div>
+    
+            <div class="vl"></div>
+
+            <div id="menu-kanan">
+                <h2>News</h2>
+    
+                <h3>Taman Bermain</h3>
+                <p>Ever Green akan memabngun sebuah taman bermain yang disediakan bagi pengunjung dan umum. Taman bermain ini akan dimulai dibuka pada bulan Agustus 2020</p>
+                
+                <h3>Tournamen</h3>
+                <p>Ever Green akan memabngun sebuah taman bermain yang disediakan bagi pengunjung dan umum. Taman bermain ini akan dimulai dibuka pada bulan Agustus 2020</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
